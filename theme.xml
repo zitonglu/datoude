@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme version="php">
+<id>datoude</id>
+<name>南通恒宇主题</name>
+<url>http://NanTongHengYu.com/</url>
+<note>南通恒宇网站主题</note>
+<description>z-blogPHP主题模版由紫铜炉设计和制作</description>
+<path></path>
+<include></include>
+<level>1</level>
+<author>
+  <name>紫铜炉</name>
+  <email>910109610@qq.com</email>
+  <url>http://limiwu.com/</url>
+</author>
+<source>
+  <name>紫铜炉</name>
+  <email>910109610@qq.com</email>
+  <url>http://limiwu.com/</url>
+</source>
+<adapted>151626</adapted>
+<version>3.4</version>
+<pubdate>2017-09-08</pubdate>
+<modified>2017-09-08</modified>
+<price></price>
+<advanced>
+  <dependency></dependency>
+  <rewritefunctions></rewritefunctions>
+  <conflict></conflict>
+</advanced>
+<sidebars>
+  <sidebar1></sidebar1>
+  <sidebar2></sidebar2>
+  <sidebar3></sidebar3>
+  <sidebar4></sidebar4>
+  <sidebar5></sidebar5>
+</sidebars>
+</theme>
