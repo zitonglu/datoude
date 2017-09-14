@@ -1,0 +1,38 @@
+body{
+	padding-top:70px;
+	font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-color:#f8f8f8;
+    color:#555;
+}
+a:hover,
+a:focus{color:#555}
+/*
+	1.Top Navigation Bar
+	2.Footer
+	3.Sidebar. This for z-blogPHP
+	4.Index
+	5.List
+	6.Single.
+	7.Search page
+	8.Other
+*/
+/*2.footer*/
+footer{
+	background: #212121;
+	box-shadow: 0 6px 9px #000 inset;
+}
+footer a{
+	color:#ccc;
+}
+footer a:hover,
+footer a:focus{
+	color: #428bca;
+	text-decoration: none;
+}
+footer .footerNav{
+	padding: 1em;
+	font-size: 20px;
+}
+footer .footerNav li{
+	padding:0 1em;
+}
