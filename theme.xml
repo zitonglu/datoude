@@ -5,8 +5,8 @@
 <url>http://NanTongHengYu.com/</url>
 <note>南通恒宇网站主题</note>
 <description>z-blogPHP主题模版由紫铜炉设计和制作</description>
-<path></path>
-<include></include>
+<path>main.php</path>
+<include>include.php</include>
 <level>1</level>
 <author>
   <name>紫铜炉</name>

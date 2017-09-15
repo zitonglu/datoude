@@ -36,3 +36,9 @@ footer .footerNav{
 footer .footerNav li{
 	padding:0 1em;
 }
+footer .copyright a{color:#aaa}
+footer .copyright,
+footer .copyright a:hover,
+footer .copyright a:focus{
+	color: #555;
+}

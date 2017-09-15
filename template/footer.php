@@ -3,11 +3,22 @@
 </div>';die();?>
 
 <footer>
-    <div class="footerNav container">
+    <div class="container footerNav">
         <ul class="list-inline">
             {module:navbar}
         </ul>
     </div>
+    <p class="container text-center copyright">
+        Copyright © 2017-2018 <a href="{$host}">{$name}</a>
+        {if $user.ID>0}
+        <a href="{$host}zb_system/admin/?act=admin" rel="nofollow" title="后台管理"><span class="glyphicon glyphicon-pencil"></span></a>
+        {else}
+        <a href="{$host}zb_system/cmd.php?act=login" rel="nofollow" title="后台登录"><span class="glyphicon glyphicon-user"></span></a>
+        {/if}
+        {if $zbp->Config('datoude')->baike!=""}&nbsp;<a href="http://www.miibeian.gov.cn" title="备案" target="_blank" rel="nofollow">{$zbp->Config('datoude')->baike}</a>&nbsp;{/if}
+        {$copyright}&nbsp;
+        Powered By {$zblogphpabbrhtml}. Theme by <a href="http://limiwu.com" title="厘米屋-专业z-blogPHP主题模版制作" target="_blank" >Limiwu.com.</a>
+    </p>
 </footer>
 {$footer}
 </body>
