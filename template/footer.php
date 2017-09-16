@@ -8,6 +8,11 @@
             {module:navbar}
         </ul>
     </div>
+    <div class="container">
+        <p class="contact">
+        
+        </p>
+    </div>
     <p class="container text-center copyright">
         Copyright © 2017-2018 <a href="{$host}">{$name}</a>
         {if $user.ID>0}

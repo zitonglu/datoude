@@ -20,6 +20,7 @@ a:focus{color:#555}
 footer{
 	background: #212121;
 	box-shadow: 0 6px 9px #000 inset;
+	padding-bottom: 1px;
 }
 footer a{
 	color:#ccc;
