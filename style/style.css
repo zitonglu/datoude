@@ -31,15 +31,30 @@ footer a:focus{
 	text-decoration: none;
 }
 footer .footerNav{
-	padding: 1em;
+	padding:1em 1em 0.4em;
 	font-size: 20px;
+	border-bottom:1px solid #030303;
 }
 footer .footerNav li{
 	padding:0 1em;
 }
-footer .copyright a{color:#aaa}
-footer .copyright,
-footer .copyright a:hover,
-footer .copyright a:focus{
+footer .contact{
+	padding: 1em 0 4em;
+	border-top: 1px solid #4f4f4f;
+	font-size:16px;
+}
+footer .contact span.name{
+	color:#ccc;
+	font-size:18px;
+}
+footer .contact .contact-qq{
+	margin-top: 3em;
+	color:#428bca;
+}
+.copyright{background: #333}
+.copyright a{color:#777}
+.copyright,
+.copyright a:hover,
+.copyright a:focus{
 	color: #555;
 }
