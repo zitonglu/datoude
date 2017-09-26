@@ -5,7 +5,10 @@ body{
     color:#555;
 }
 a:hover,
-a:focus{color:#555}
+a:focus{
+	color:#555;
+	text-decoration:none
+}
 /*
 	1.Top Navigation Bar
 	2.Footer
@@ -28,7 +31,7 @@ footer a{
 footer a:hover,
 footer a:focus{
 	color: #428bca;
-	text-decoration: none;
+	text-decoration:none;
 }
 footer .footerNav{
 	padding:1em 1em 0.4em;
@@ -51,10 +54,10 @@ footer .contact .contact-qq{
 	margin-top: 3em;
 	color:#428bca;
 }
-.copyright{background: #333}
-.copyright a{color:#777}
+.copyright{background: #333;padding: 1em 0;}
+.copyright a{color:#999}
 .copyright,
 .copyright a:hover,
 .copyright a:focus{
-	color: #555;
+	color: #666;
 }

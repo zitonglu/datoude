@@ -19,6 +19,7 @@
     </div>
 </footer>   
 <div class="text-center copyright">
+    {$zbp->Config('datoude')->aboutUs}<br>
     Copyright © 2017-2018 <a href="{$host}">{$name}</a>
     {if $user.ID>0}
     <a href="{$host}zb_system/admin/?act=admin" rel="nofollow" title="后台管理"><span class="glyphicon glyphicon-pencil"></span></a>

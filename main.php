@@ -55,6 +55,7 @@ require $blogpath . 'zb_system/admin/admin_top.php';
 <?php if ($act == 'config' || $act == ''){?><!--基本设置-->
 <?php
 if(isset($_POST['baike'])){
+  $zbp->Config('datoude')->aboutUs = $_POST['aboutUs'];
   $zbp->Config('datoude')->baike = $_POST['baike'];
   $zbp->Config('datoude')->QQ = $_POST['QQ'];
   $zbp->SaveConfig('datoude');
@@ -67,6 +68,12 @@ if(isset($_POST['baike'])){
         <th scope="col" height="32" width="150px">配置项</th>
         <th scope="col">配置内容</th>
         <th scope="col" width="500px">使用说明</th>
+      </tr>
+      <tr>
+        <td scope="row">页脚备注</td>
+        <td><input name="aboutUs" type="text" style="width:90%" value="<?php echo $zbp->Config('datoude')->aboutUs; ?>">
+          </td>
+        <td>显示在每页底部</td>
       </tr>
       <tr>
         <td scope="row">备案号</td>
