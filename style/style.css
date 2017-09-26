@@ -61,3 +61,14 @@ footer .contact .contact-qq{
 .copyright a:focus{
 	color: #666;
 }
+/*4.index*/
+.banner{
+	min-height:350px;
+	background:url(../images/nbanner.jpg) no-repeat center top;
+}
+.list{
+    margin-top: -90px;
+    padding:1em 6em 5em;
+    background-color: #fff;
+}
+.list ul{padding-left:0}
