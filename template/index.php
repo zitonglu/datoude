@@ -7,7 +7,13 @@
 <div class="jumbotron banner">
 </div>
 <div class="container list">
-	<div class="listTitle">技术文章</div>
+	{if $type=='category'}
+	<div class="listTitle">{$category.Name}
+		{if $category.Alias != ''}
+			<span>/ {$category.Alias}</span>
+		{/if}
+	</div>
+	{/if}
 	<ul>
 	{foreach $articles as $article}
 		{template:post-multi}
