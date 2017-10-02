@@ -21,9 +21,9 @@
 	</div>
 	{/if}
 	<ul>
-	{foreach $articles as $article}
+		{foreach $articles as $article}
 		{template:post-multi}
-	{/foreach}
+		{/foreach}
 	</ul>
 	{template:pagebar}
 </div>
