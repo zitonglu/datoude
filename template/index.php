@@ -8,6 +8,12 @@
 </div>
 <div class="container list">
 	{if $type=='category'}
+	<div class="floatRight">
+		<ol class="breadcrumb">
+			<li><a href="{$host}" title="{$name}">首页</a></li>
+			<li class="active">{$category.Name}</li>
+		</ol>
+	</div>
 	<div class="listTitle">{$category.Name}
 		{if $category.Alias != ''}
 			<span>/ {$category.Alias}</span>
