@@ -3,6 +3,7 @@
 </div>';die();?>
 {template:header}
 <body class="index">
+	{template:nav}
 <!-- 导航结束 -->
 <div class="jumbotron banner">
 </div>

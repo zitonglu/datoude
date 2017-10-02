@@ -1,5 +1,4 @@
 body{
-	padding-top:70px;
 	font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
 	background-color:#FDFDFD;
     color:#555;
@@ -16,9 +15,18 @@ a:focus{
 	4.Index
 	5.List
 	6.Single.
-	7.Search page
 	8.Other
 */
+/*1.Top Navigation Bar*/
+.navbarStyle{
+	margin-bottom:0;
+	font-size:20px;
+	border-bottom: 2px solid #428bca;
+}
+.navbarStyle li{
+	margin-left:1em;
+	margin-right:1em;
+}
 /*2.footer*/
 footer{
 	background: #212121;
@@ -35,7 +43,7 @@ footer a:focus{
 }
 footer .footerNav{
 	padding:1em 1em 0.4em;
-	font-size: 20px;
+	font-size:18px;
 	border-bottom:1px solid #030303;
 }
 footer .footerNav li{
@@ -90,6 +98,7 @@ footer .contact .contact-qq{
 .floatRight{
 	float: right;
 }
+/*5.List*/
 .breadcrumb{margin-bottom:0}
 .listLi{
 	border-bottom:1px solid #e1e1e8;
