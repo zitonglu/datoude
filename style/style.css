@@ -3,6 +3,7 @@ body{
 	background-color:#FDFDFD;
     color:#555;
 }
+a{color:#3d107b}
 a:hover,
 a:focus{
 	color:#555;
@@ -20,12 +21,52 @@ a:focus{
 /*1.Top Navigation Bar*/
 .navbarStyle{
 	margin-bottom:0;
-	font-size:20px;
-	border-bottom: 2px solid #428bca;
+	font-size:16px;
+	border-bottom: 2px solid #3d107b;
 }
 .navbarStyle li{
 	margin-left:1em;
 	margin-right:1em;
+}
+.navbarStyle .navbar-nav > li > a{
+	color: #333;
+}
+.navbarStyle .navbar-nav > li > a:hover,
+.navbarStyle .navbar-nav > li > a:focus{
+	color: #428bca;
+}
+.logo{
+	height:80px;
+}
+.logo .ComLogo{
+	background:url(../images/logo.png) no-repeat left center;
+	height: 80px;
+}
+.logo .ComLogo p{
+	margin-left: 60px;
+	margin-top: 20px;
+	font-size: 20px;
+	color:#333;
+	line-height: 22px;
+}
+.logo .ComLogo p span{
+	font-size:11px;
+}
+.logo .us{
+	margin-top:10px;
+}
+.logo .us a{
+	margin-right:10px;
+	margin-left:10px;
+	color:#666;
+}
+.logo .us a:hover,
+.logo .us a:focus{
+	color:#3d107b;
+}
+.logo .us .saleNumber{
+	font-size:20px;
+	color:#3d107b;
 }
 /*2.footer*/
 footer{
@@ -104,6 +145,9 @@ footer .contact .contact-qq{
 	border-bottom:1px solid #e1e1e8;
 }
 .listLi p{margin:0}
+.listLi a{color:#555}
+.listLi a:hover,
+.listLi a:focus{color:#3d107b}
 .listLi:hover{
 	background-color: #f7f7f9;
 	border: 1px solid #e1e1e8;
