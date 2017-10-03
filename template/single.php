@@ -5,27 +5,26 @@
 <body>
 	{template:nav}
 <!-- 导航结束 -->
-<div class="jumbotron banner">
-</div>
+<div class="jumbotron banner"></div>
 <div class="container list">
-	{if $type=='category'}
+	{if $type=='article'}
 	<div class="floatRight">
 		<ol class="breadcrumb">
 			<li><a href="{$host}" title="{$name}">首页</a></li>
-			<li class="active">{$category.Name}</li>
+			<li><a href="{$article.Category.Url}" title="{$article.Category.Name}">{$article.Category.Name}</a></li>
+			<li class="active">正文</li>
 		</ol>
 	</div>
-	<div class="listTitle">{$category.Name}
-		{if $category.Alias != ''}
-			<span>/ {$category.Alias}</span>
+	<div class="listTitle">{$article.Category.Name}
+		{if $article.Category.Alias != ''}
+			<span>/ {$article.Category.Alias}</span>
 		{/if}
 	</div>
 	{/if}
-	<ul>
-		{foreach $articles as $article}
-		{template:post-multi}
-		{/foreach}
-	</ul>
-	{template:pagebar}
+	{if $article.Type==ZC_POST_TYPE_ARTICLE}
+		{template:post-single}
+	{else}
+		{template:post-page}
+	{/if}
 </div>
 {template:footer}
