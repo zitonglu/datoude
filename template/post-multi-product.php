@@ -12,7 +12,7 @@
 		</a>
 		<div class="caption">
 			<a href="{$article.Url}" class="title" title="{$article.Title}"><h4>{$article.Title}</h4></a>
-			<p>{$article.Intro}</p>
+			<div class="intro">{$article.Intro}</div>
 		</div>
 	</div>
 </div>

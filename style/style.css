@@ -176,3 +176,9 @@ h6.about{
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+#product .intro{
+	color: #999;
+	height: 60px;
+    line-height: 20px;
+    overflow: hidden;
+}
