@@ -247,7 +247,6 @@ function datoude_categorys_option($selectID=1){
 /* 插入图片的函数 */
 function datoude_mustIMG($article = '',$rand = 'rand'){
 	global $zbp;
-	$randABC = rand(1,20);
 	if($article != ''){
 		$pattern = "/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg|\.png]))[\'|\"].*?[\/]?>/";
 		$content = $article->Content;
@@ -257,12 +256,12 @@ function datoude_mustIMG($article = '',$rand = 'rand'){
 		}elseif(isset($matchContent[1][0])){
 			$IMGURL = $matchContent[1][0];
 		}else{
-			$IMGURL = $zbp->host."zb_users/theme/".$zbp->theme."/images/".$rand."/".$randABC.".jpg";
+			$IMGURL = $zbp->host."zb_users/theme/".$zbp->theme."/images/".$rand."/shangpin.jpg";
 		};
 
 		return $IMGURL;
 	}else{
-		return $zbp->host."zb_users/theme/".$zbp->theme."/images/".$rand."/".$randABC.".jpg";
+		return $zbp->host."zb_users/theme/".$zbp->theme."/images/".$rand."/shangpin.jpg";
 	};
 }
 /* 随机文章-热门文章-热评文章 */

@@ -16,6 +16,7 @@ a:focus{
 	4.Index
 	5.List
 	6.Single.
+	7.product
 	8.Other
 */
 /*1.Top Navigation Bar*/
@@ -165,4 +166,13 @@ footer .contact .contact-qq{
 /*6.Single.*/
 h6.about{
 	padding: 1em 0 2em;
+}
+/*7.product.*/
+#product{
+	padding-top: 20px;
+}
+#product .title h4{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
