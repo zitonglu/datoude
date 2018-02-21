@@ -5,9 +5,9 @@
 	<div class="thumbnail">
 		<a href="{$article.Url}" title="{$article.Title}">
 			{if $article->Metas->datoude_teSeTuPian == ''}
-			<img src="{$host}zb_users/theme/{$theme}/images/shangpin.jpg" alt="{$article.Title}">
+			<img src="{$host}zb_users/theme/{$theme}/images/shangpin.jpg" alt="{$article.Title}" class="product_img">
 			{else}
-			<img src="{datoude_mustIMG($article)}" alt="{$article.Title}">
+			<img src="{datoude_mustIMG($article)}" alt="{$article.Title}" class="product_img">
 			{/if}
 		</a>
 		<div class="caption">

@@ -186,3 +186,6 @@ h6.about{
 	margin: 0 2em;
 	width: 350px;
 }
+.product_img{
+	max-height: 200px;
+}
