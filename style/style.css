@@ -233,3 +233,28 @@ h6.about{
 	color:#eee;
 	background:#428bca;
 }
+.culturalAndArticle{
+	padding:30px 0;
+	background:#e7e7e7;
+}
+.culturalAndArticle h4{
+	font-size:18px;
+	border-left:5px solid #3d107b;
+	padding-left:.4em;
+}
+.culturalAndArticle ul{
+	padding:0 0 10px 1.2em;
+}
+.culturalAndArticle ul li{
+	/*list-style-type:none;*/
+	padding: 2px;
+    margin-bottom: 2px;
+    border-bottom: 1px dashed #cccccc;
+}
+.culturalAndArticle ul li a{color: #333;}
+.culturalAndArticle ul li,
+.culturalAndArticle ul li a:hover,
+.culturalAndArticle ul li a:focus{
+	color:#428bca;
+}
+.culturalAndArticle time{color:#999}

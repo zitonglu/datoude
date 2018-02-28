@@ -28,6 +28,26 @@
 	}
 {/php}
 <!-- banner幻灯片结束 -->
+<div class="culturalAndArticle">
+	<div class="container">
+		<div class="col-md-6 Cultural">
+			<h4>技术文章 Article</h4>
+			<div class="col-md-6"></div>
+			<div class="col-md-6"></div>
+		</div>
+		<div class="col-md-6 Article">
+			<h4>技术文章 Article</h4>
+			<ul>
+				{$shopArray=Getlist(5,3);}
+				{foreach $shopArray as $article}
+				<li><a href="{$article.Url}" title="{$article.Title}">{$article.Title}</a><time class="pull-right">{TimeAgo($article.Time())}</time></li>
+				{/foreach}
+			</ul>
+			<p class="text-right"><a href="{$host}?cate=3" class="more">更多 >></a></p>
+		</div>
+	</div>
+</div>
+<!-- 企业文化&技术文章end -->
 <div class="productBox">
 	<p class="container">产品展示 | Product<a href="#" class="pull-right more">更多 >></a></p>
 </div>
