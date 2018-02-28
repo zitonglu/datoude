@@ -189,14 +189,17 @@ h6.about{
 	padding: 1em 0 2em;
 }
 /*7.product.*/
-#product{
+#product,
+#indexProduct{
 	padding-top: 20px;
 }
+#indexProduct .title h4,
 #product .title h4{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+#indexProduct .intro,
 #product .intro{
 	color: #999;
 	height: 60px;
@@ -210,4 +213,23 @@ h6.about{
 .product_img{
 	max-height: 200px;
 	min-height: 200px;
+}
+.productBox{
+	padding: 15px 0 1px;
+	background: #f7f7f7;
+	color:#444;
+	font-size: 18px;
+	border-bottom: 1px solid #ddd;
+}
+/*2.other*/
+.more{
+	background: #333;
+    color: white;
+    padding: 4px 6px;
+    font-size: 14px;
+}
+.more:hover,
+.more:focus{
+	color:#eee;
+	background:#428bca;
 }

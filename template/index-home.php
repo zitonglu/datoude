@@ -28,6 +28,30 @@
 	}
 {/php}
 <!-- banner幻灯片结束 -->
+<div class="productBox">
+	<p class="container">产品展示 | Product<a href="#" class="pull-right more">更多 >></a></p>
+</div>
+{$shopArray=Getlist(8,2);}
+<div class="container" id="indexProduct">
+{foreach $shopArray as $article}
+<div class="col-sm-4 col-md-3" id="log{$article.ID}">
+	<div class="thumbnail">
+		<a href="{$article.Url}" title="{$article.Title}">
+			{if $article->Metas->datoude_teSeTuPian == ''}
+			<img src="{$host}zb_users/theme/{$theme}/images/shangpin.jpg" alt="{$article.Title}" class="product_img">
+			{else}
+			<img src="{datoude_mustIMG($article)}" alt="{$article.Title}" class="product_img">
+			{/if}
+		</a>
+		<div class="caption">
+			<a href="{$article.Url}" class="title" title="{$article.Title}"><h4>{$article.Title}</h4></a>
+			<div class="intro">{$article.Intro}</div>
+		</div>
+	</div>
+</div>
+{/foreach}
+</div>
+<!-- 产品介绍 end -->
 <div class="links">
 	<ul class="container list-inline">友情链接：{module:link}</ul>
 </div>
