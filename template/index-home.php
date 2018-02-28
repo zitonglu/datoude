@@ -9,7 +9,7 @@
 	if(is_file($zbp->path.'zb_users/theme/datoude/plugin/out.html'))
 	{
 {/php}			
-<div id="carousel-example-generic" class="carousel slide topbox container" data-ride="carousel">
+<div id="carousel-example-generic" class="carousel slide topbox indexPPT" data-ride="carousel">
 	<div class="carousel-inner" role="listbox">
 {php}
 	include $zbp->path.'zb_users/theme/datoude/plugin/out.html';

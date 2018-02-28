@@ -144,6 +144,11 @@ footer .contact .contact-qq{
 .carousel-control.right{
 	background-image:none !important;
 }
+.indexPPT{
+	width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
 /*5.List*/
 .breadcrumb{margin-bottom:0}
 .listLi{
