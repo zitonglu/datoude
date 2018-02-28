@@ -55,7 +55,7 @@ require $blogpath . 'zb_system/admin/admin_top.php';
 <?php if ($act == 'config' || $act == ''){?><!--基本设置-->
 <?php
 if(isset($_POST['baike'])){
-  $zbp->Config('datoude')->aboutUs = $_POST['aboutUs'];
+  $zbp->Config('datoude')->cultural = $_POST['cultural'];
   $zbp->Config('datoude')->baike = $_POST['baike'];
   $zbp->Config('datoude')->QQ = $_POST['QQ'];
   $zbp->SaveConfig('datoude');
@@ -70,10 +70,10 @@ if(isset($_POST['baike'])){
         <th scope="col" width="500px">使用说明</th>
       </tr>
       <tr>
-        <td scope="row">页脚备注</td>
-        <td><input name="aboutUs" type="text" style="width:90%" value="<?php echo $zbp->Config('datoude')->aboutUs; ?>">
+        <td scope="row">企业文化</td>
+        <td><input name="cultural" type="text" style="width:90%" value="<?php echo $zbp->Config('datoude')->cultural; ?>">
           </td>
-        <td>显示在每页底部</td>
+        <td>首页企业文化文字</td>
       </tr>
       <tr>
         <td scope="row">备案号</td>

@@ -30,12 +30,15 @@
 <!-- banner幻灯片结束 -->
 <div class="culturalAndArticle">
 	<div class="container">
-		<div class="col-md-6 Cultural">
-			<h4>技术文章 Article</h4>
-			<div class="col-md-6"></div>
-			<div class="col-md-6"></div>
+		<div class="col-md-6" id="cultural">
+			<h4>企业文化及理念 Cultural</h4>
+			<img src="{$host}zb_users/theme/{$theme}/images/about02.png" class="Cultural_img pull-left" alt="企业文化及理念">
+			<p class="em2 Cultural_text">
+				{$zbp->Config('datoude')->cultural}
+			</p>
+			<p class="text-right"><a href="{$host}?id=4" class="more">更多 >></a></p>
 		</div>
-		<div class="col-md-6 Article">
+		<div class="col-md-6" id="article">
 			<h4>技术文章 Article</h4>
 			<ul>
 				{$shopArray=Getlist(5,3);}

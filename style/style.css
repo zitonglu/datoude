@@ -222,6 +222,7 @@ h6.about{
 	border-bottom: 1px solid #ddd;
 }
 /*2.other*/
+.em2{text-indent:2em}
 .more{
 	background: #333;
     color: white;
@@ -246,7 +247,6 @@ h6.about{
 	padding:0 0 10px 1.2em;
 }
 .culturalAndArticle ul li{
-	/*list-style-type:none;*/
 	padding: 2px;
     margin-bottom: 2px;
     border-bottom: 1px dashed #cccccc;
@@ -258,3 +258,8 @@ h6.about{
 	color:#428bca;
 }
 .culturalAndArticle time{color:#999}
+.Cultural_img{
+	border:5px white solid;
+	margin-right: 2em;
+}
+.Cultural_text{line-height:24px}
