@@ -28,25 +28,7 @@
 	}
 {/php}
 <!-- banner幻灯片结束 -->
-<div class="container">
-	{if $type=='category'}
-	<div class="floatRight">
-		<ol class="breadcrumb">
-			<li><a href="{$host}" title="{$name}">首页</a></li>
-			<li class="active">{$category.Name}</li>
-		</ol>
-	</div>
-	<div class="listTitle">{$category.Name}
-		{if $category.Alias != ''}
-			<span>/ {$category.Alias}</span>
-		{/if}
-	</div>
-	{/if}
-	<ul>
-		{foreach $articles as $article}
-		{template:post-multi}
-		{/foreach}
-	</ul>
-	{template:pagebar}
+<div class="links">
+	<ul class="container list-inline">友情链接：{module:link}</ul>
 </div>
 {template:footer}

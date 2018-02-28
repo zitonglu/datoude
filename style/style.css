@@ -149,6 +149,18 @@ footer .contact .contact-qq{
     max-width: 1440px;
     margin: 0 auto;
 }
+.links{
+	padding: 15px 0 7px;
+	background: #efefef;
+	color:#444;
+}
+.links li{
+	border-right:1px solid #d8d8d8;
+}
+.links li:last-child{border-right:none;}
+.links a{color:#444}
+.links a:hover,
+.links a:focus{color:red}
 /*5.List*/
 .breadcrumb{margin-bottom:0}
 .listLi{
