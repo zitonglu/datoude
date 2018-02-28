@@ -140,6 +140,10 @@ footer .contact .contact-qq{
 .floatRight{
 	float: right;
 }
+.carousel-control.left,
+.carousel-control.right{
+	background-image:none !important;
+}
 /*5.List*/
 .breadcrumb{margin-bottom:0}
 .listLi{
@@ -188,4 +192,5 @@ h6.about{
 }
 .product_img{
 	max-height: 200px;
+	min-height: 200px;
 }

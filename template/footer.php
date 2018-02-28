@@ -31,5 +31,6 @@
     Powered By {$zblogphpabbrhtml}. Theme by <a href="http://limiwu.com" title="厘米屋-专业z-blogPHP主题模版制作" target="_blank" >Limiwu.com.</a>
 </div>
 {$footer}
+<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </body>
 </html>
