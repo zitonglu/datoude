@@ -56,6 +56,7 @@ require $blogpath . 'zb_system/admin/admin_top.php';
 <?php
 if(isset($_POST['baike'])){
   $zbp->Config('datoude')->cultural = $_POST['cultural'];
+  $zbp->Config('datoude')->aboutUs = $_POST['aboutUs'];
   $zbp->Config('datoude')->baike = $_POST['baike'];
   $zbp->Config('datoude')->QQ = $_POST['QQ'];
   $zbp->SaveConfig('datoude');
@@ -74,6 +75,12 @@ if(isset($_POST['baike'])){
         <td><input name="cultural" type="text" style="width:90%" value="<?php echo $zbp->Config('datoude')->cultural; ?>">
           </td>
         <td>首页企业文化文字</td>
+      </tr>
+      <tr>
+        <td scope="row">首页公司介绍</td>
+        <td><input name="aboutUs" type="text" style="width:90%" value="<?php echo $zbp->Config('datoude')->aboutUs; ?>">
+          </td>
+        <td>首页公司介绍文字</td>
       </tr>
       <tr>
         <td scope="row">备案号</td>

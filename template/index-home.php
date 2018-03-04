@@ -35,6 +35,8 @@
 		</div>
 		<div class="col-md-5" id="aboutUs">
 			<h4><img src="{$host}zb_users/theme/{$theme}/images/logo.png" alt="LOGO" class="logoTitle">关于我们 About Us</h4>
+			<img src="{$host}zb_users/theme/{$theme}/images/about01.jpg" alt="com" class="img-responsive aboutUs_img">
+			<p class="em2 aboutUsText">{$zbp->Config('datoude')->aboutUs} <a href="{$host}?id=4">【更多】</a></p>
 		</div>
 		<div class="col-md-4" id="news">
 			<h4><img src="{$host}zb_users/theme/{$theme}/images/logo.png" alt="LOGO" class="logoTitle">公司新闻 News</h4>

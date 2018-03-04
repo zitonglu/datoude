@@ -297,3 +297,13 @@ h6.about{
 	max-height: 2.6em;
 	font-size: 12px;
 }
+.aboutUs_img{
+	padding: 10px;
+    background-color: #fff;
+}
+.aboutUsText{
+	font-size:12px;
+	color: #666;
+    padding-top: 15px;
+    line-height: 20px;
+}
