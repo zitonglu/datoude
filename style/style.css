@@ -235,13 +235,14 @@ h6.about{
 	background:#428bca;
 }
 .culturalAndArticle{
-	padding:30px 0;
+	padding:50px 0 80px;
 	background:#e7e7e7;
 }
 .culturalAndArticle h4{
+	margin-bottom: 1.5em;
+	padding-left:.4em;
 	font-size:18px;
 	border-left:5px solid #3d107b;
-	padding-left:.4em;
 }
 .culturalAndArticle ul{
 	padding:0 0 10px 1.2em;
@@ -254,7 +255,9 @@ h6.about{
 .culturalAndArticle ul li a{color: #333;}
 .culturalAndArticle ul li,
 .culturalAndArticle ul li a:hover,
-.culturalAndArticle ul li a:focus{
+.culturalAndArticle ul li a:focus,
+.newTitle:hover,
+.newTitle:focus{
 	color:#428bca;
 }
 .culturalAndArticle time{color:#999}
@@ -263,3 +266,34 @@ h6.about{
 	margin-right: 2em;
 }
 .Cultural_text{line-height:24px}
+.newsBox{
+	padding: 50px 0 80px;
+	background: #f7f7f7;
+}
+.newsBox h4{
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ddd;
+}
+.logoTitle{
+	margin-right:8px;
+	height:20px;
+}
+#news li{
+	padding-bottom: 1em;
+	border-bottom: 1px dashed #ddd;
+}
+.newTitle h5{
+	margin-top: 1.5em;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	word-break:break-all;
+	overflow:hidden;
+	font-size:14px;
+}
+.newTitle{color: #333;}
+.introText{
+	color: #888;
+	overflow: hidden;
+	max-height: 2.6em;
+	font-size: 12px;
+}

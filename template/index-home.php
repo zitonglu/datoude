@@ -28,6 +28,30 @@
 	}
 {/php}
 <!-- banner幻灯片结束 -->
+<div class="newsBox">
+	<div class="container">
+		<div class="col-md-3" id="productList">
+			<h4><img src="{$host}zb_users/theme/{$theme}/images/logo.png" alt="LOGO" class="logoTitle">产品分类 Product</h4>
+		</div>
+		<div class="col-md-5" id="aboutUs">
+			<h4><img src="{$host}zb_users/theme/{$theme}/images/logo.png" alt="LOGO" class="logoTitle">关于我们 About Us</h4>
+		</div>
+		<div class="col-md-4" id="news">
+			<h4><img src="{$host}zb_users/theme/{$theme}/images/logo.png" alt="LOGO" class="logoTitle">公司新闻 News</h4>
+			<ul class="list-unstyled">
+				{$newsArray=Getlist(3,1);}
+				{foreach $newsArray as $article}
+				<li>
+					<a href="{$article.Url}" title="{$article.Title}" class="newTitle"><H5>{$article.Title}</H5></a>
+					<div class="introText">{$article.Intro}</div>
+				</li>
+				{/foreach}
+			</ul>
+			<p class="text-right"><a href="{$host}?id=1" class="more">更多 》</a></p>
+		</div>
+	</div>
+</div>
+<!-- 新闻和我们end -->
 <div class="culturalAndArticle">
 	<div class="container">
 		<div class="col-md-6" id="cultural">
