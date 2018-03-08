@@ -32,6 +32,10 @@
 	<div class="container">
 		<div class="col-md-3" id="productList">
 			<h4><img src="{$host}zb_users/theme/{$theme}/images/logo.png" alt="LOGO" class="logoTitle">产品分类 Product</h4>
+			<ul class="productTags">
+				{php}echo datoude_Tags();{/php}
+			</ul>
+			<p class="text-right"><a href="{$host}?cate=2" class="more">更多 》</a></p>
 		</div>
 		<div class="col-md-5" id="aboutUs">
 			<h4><img src="{$host}zb_users/theme/{$theme}/images/logo.png" alt="LOGO" class="logoTitle">关于我们 About Us</h4>

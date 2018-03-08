@@ -264,6 +264,16 @@ function datoude_mustIMG($article = '',$rand = 'rand'){
 		return $zbp->host."zb_users/theme/".$zbp->theme."/images/".$rand."/shangpin.jpg";
 	};
 }
+/* 热门标签 */
+function datoude_Tags(){
+	global $zbp,$str;
+	$str = '';
+	$array = $zbp->GetTagList('','',array('tag_Count'=>'DESC'),array(6),'');
+	foreach ($array as $tag) {
+	$str .= "<li><span class=\"glyphicon glyphicon-play\"></span><a href=\"{$tag->Url}\" title=\"{$tag->Name}\">{$tag->Name}</a></li>";
+	}
+	return $str;
+}
 /* 随机文章-热门文章-热评文章 */
 function datoude_TcgetList($count = 10, $cate = null, $auth = null, $date = null, $tags = null, $search = null, $option = null,$order=null) {
     global $zbp;

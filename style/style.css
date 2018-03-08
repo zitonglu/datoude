@@ -257,7 +257,9 @@ h6.about{
 .culturalAndArticle ul li a:hover,
 .culturalAndArticle ul li a:focus,
 .newTitle:hover,
-.newTitle:focus{
+.newTitle:focus,
+.productTags li a:hover,
+.productTags li a:focus{
 	color:#428bca;
 }
 .culturalAndArticle time{color:#999}
@@ -290,7 +292,8 @@ h6.about{
 	overflow:hidden;
 	font-size:14px;
 }
-.newTitle{color: #333;}
+.newTitle,
+.productTags li a{color: #333;}
 .introText{
 	color: #888;
 	overflow: hidden;
@@ -306,4 +309,22 @@ h6.about{
 	color: #666;
     padding-top: 15px;
     line-height: 20px;
+}
+.productTags{
+	margin:10px 0 36px;;
+	padding-left:0;
+}
+.productTags li{
+	margin-bottom:5px;
+	padding: 6px;
+	list-style-type: none;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size:14px;
+}
+.productTags li span{
+	margin:0 10px;
+	color:#3d107b;
+	font-size:10px;
 }
